@@ -1,0 +1,197 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Imported font */
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans|Quattrocento); 
+
+/* Base background and font */
+body,
+header,
+footer {
+  background: ghostwhite;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/* Name */
+.title {
+  font-size: 40px;
+  font-weight: lighter;
+  color: lightslategray;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+/* Navigation */
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+  color: #BFAF85;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #DFCC9C;
+  text-decoration: none;
+}
+
+/* Responsiveness */
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title {
+    margin: 10px 0 10px 20px;
+    padding-top: 0;
+    text-align: left;
+  }
+  
+  header nav {
+    margin-top: 10px;
+  }
+}
+
+/* Groups */
+main {
+  padding: 25px 0;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+section.alt-color {
+  background: lightslategray;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* Text */
+h1 {
+  font-size: 28px;
+  font-weight: 400;
+  color:  #BFAF85;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0px 10px;
+  color: #BFAF85;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #BFAF85;
+}
+
+p {
+ line-height: 1.5em;
+ margin-bottom: 0;
+ color: #403A2C;
+}
+
+main a {
+	font-weight: 700;
+	text-decoration: none;	
+}
+
+main a:link {
+  color: #BFAF85;
+}
+
+main a:visited {
+  color: #BFAF85;
+}
+
+main a:hover {
+  color: #DFCC9C;
+}
+
+a:active {
+  color: #FFE9B2;
+}
+
+a:hover {
+	text-decoration: none;	
+}
+
+footer p {
+	font-size: 13px;
+  text-align: center;
+  font-style: italic;
+  color: #BFAF85;
+} 
+
+/* Image */
+main img {
+  width: 100%;
+}
+
+.image-circle {
+  border-radius: 50%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Desktop size */
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* Contact form */
+form {
+  padding-right: 8px;
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
